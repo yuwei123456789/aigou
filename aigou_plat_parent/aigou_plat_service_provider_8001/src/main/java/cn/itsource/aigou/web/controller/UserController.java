@@ -17,7 +17,7 @@ public class UserController {
         //调用service和mapper：
         // 用前台的用户名和密码作为查询条件从数据库查询，如果有数据就是对的，否则就是错误的：
         if(user!=null&& !StringUtils.isEmpty(user.getName())&&!StringUtils.isEmpty(user.getPassword())){
-          if("admin".equals(user.getName())&&"xmz".equals(user.getPassword())){
+          if("admin".equals(user.getName())&&"admin".equals(user.getPassword())){
               return AjaxResult.me().setMsg("登录成功");
           } else {
               return AjaxResult.me().setSuccess(false).setMsg("登录失败");

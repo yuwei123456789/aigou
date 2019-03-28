@@ -31,7 +31,7 @@ public class Swagger2 {
         return new ApiInfoBuilder()
                 .title("爱购物系统api")//名字
                 .description("商品系统接口文档说明")//额外描述
-                .contact(new Contact("xmz", "", "wenbing@itsource.cn"))
+                .contact(new Contact("admin", "", "wenbing@itsource.cn"))
                 .version("1.0")// 版本
                 .build();
     }
